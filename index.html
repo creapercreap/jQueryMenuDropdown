@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Dropdown</title>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dropdown.js"></script>
+
+
+<style type="text/css">
+#mainmenu {
+	width: 740px;
+	border-top: 3px double #DDD;
+	border-bottom: 3px double #DDD;
+	background-color: #FFF;
+}
+#menu ul {
+	float: left;
+	list-style-type: none;
+}
+#menu ul li {
+	float: left;
+	position: relative;
+	text-align: center;
+}
+#menu ul ul {
+	float: left;
+	position: absolute;
+	z-index: 9999;
+	background-color: #FFF;
+}
+#menu ul ul li {
+	width:150px;
+}
+#menu ul ul ul {
+	left: 100%;
+	top: 0px;
+}
+#menu ul li:hover > ul {
+	display: block;
+}
+#menu a {
+	text-decoration: none;
+	color: #999;
+	padding: 10px;
+	display: block;
+}
+#menu a:hover{
+	color:orange;
+}
+#menu ul ul li a {
+	border:1px solid #DDD;
+}
+#menu {
+	display: table;
+	padding: 10px 5px;
+	margin: 0 auto;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="mainmenu">
+<div id="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#" title="hi">About</a>
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#" title="hiii">Link</a></li>
+				<li><a href="#" title="hey">Link</a>
+					<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+				<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+			</li>
+			</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Portfolio</a></li>
+		<li><a href="#">Blog</a>
+		<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Informations</a></li>
+		<li><a href="#">Links</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
